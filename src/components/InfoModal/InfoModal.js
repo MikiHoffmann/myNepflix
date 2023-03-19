@@ -4,7 +4,7 @@ import { IconClose } from "../Icons/IconClose"
 import { useSelector, useDispatch } from "react-redux"
 import { toggleModal } from "../../redux/modal/modal.actions"
 
-const InfoModal = (img) => {
+const InfoModal = ({img}) => {
   const modalVisible = useSelector((state) => state.modal.modalContainer)
   const dispatch = useDispatch()
   const rootElement = document.body
@@ -28,7 +28,7 @@ const InfoModal = (img) => {
             >
               <IconClose />
             </button>
-            <img src={img} alt={img} />
+            <img src={`${img}`} alt={img} />
           </div>
         </div>
       ) : null}

@@ -7,9 +7,10 @@ import { LangContext } from "../../redux/language/languageContext"
 import { ButtonRoundDark } from "../ButtonRound/ButtonRound"
 import { IconVolumeUp } from "../Icons/IconVolumeUp"
 import { IconKijkWijzer16 } from "../Icons/IconKijkWijzer16"
-//import InfoModal from "../InfoModal/InfoModal"
+import InfoModal from "../InfoModal/InfoModal"
 import { toggleModal } from "../../redux/modal/modal.actions"
 import { useDispatch, useSelector } from "react-redux"
+import img from "../../assets/images/22.jpg"
 
 const HomePageHero = ({ Video, HeroTitle }) => {
   const { language } = useContext(LangContext)
@@ -47,7 +48,7 @@ const HomePageHero = ({ Video, HeroTitle }) => {
         <div className="heroToBackgroundTransition"></div>
         <video src={`${Video}`} autoPlay loop muted></video>
       </div>
-
+      <InfoModal img={img}/>
     </>
   )
 }

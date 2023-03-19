@@ -17,7 +17,11 @@
         height: 300%;
         width: 80%;
         background-color: var(--black);
-        border-radius: 15px;
+        border-radius: 7em;
+        img {
+            height: auto;
+            width: 100%;
+        }
         .buttonModalClose {
             position: absolute;
             top: 2em;
