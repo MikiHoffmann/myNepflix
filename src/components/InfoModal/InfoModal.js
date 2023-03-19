@@ -10,6 +10,8 @@ const InfoModal = ({img}) => {
   const rootElement = document.body
   if (modalVisible) {
     rootElement.style.overflow = "hidden"
+  } else {
+    rootElement.style.overflow = "auto"
   }
   return (
     <>
