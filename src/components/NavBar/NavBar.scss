@@ -86,7 +86,7 @@
           top: 100%;
           right: 0;
           width: 400%;
-          padding: .4em 0;
+          padding: 0.4em 0;
           background-color: var(--black);
           transition: all 0.3s ease-in-out;
           .dropDownItem {
@@ -94,7 +94,7 @@
             width: fit-content;
             align-items: center;
             gap: 0.4em;
-            padding: .4em 0.6em;
+            padding: 0.4em 0.6em;
             &:hover {
               text-decoration: underline;
             }
@@ -102,11 +102,11 @@
           .dropDownItem:last-of-type {
             justify-content: center;
             width: 100%;
-            margin-top: .3em;
-            padding: .9em 0 .7em 0;
+            margin-top: 0.3em;
+            padding: 0.9em 0 0.7em 0;
             text-align: center;
             color: var(--whiteOpacity);
-            border-top: .3px solid var(--whiteOpacity);
+            border-top: 0.3px solid var(--whiteOpacity);
             &:hover {
               color: var(--white);
               text-decoration: none;

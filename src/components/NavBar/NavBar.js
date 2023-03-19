@@ -34,16 +34,28 @@ const NavBar = () => {
         </Link>
         <div className="navBarLinkContainer">
           <div className="pageLinkContainer">
-            <NavLink to="/home" className={splitPathname[1] === "home" ? "activeLink" : ""}>
+            <NavLink
+              to="/home"
+              className={splitPathname[1] === "home" ? "activeLink" : ""}
+            >
               <span>{language === "EN" ? "Homepage" : "Homepagina"}</span>
             </NavLink>
-            <NavLink to="/movies" className={splitPathname[1] === "movies" ? "activeLink" : ""}>
+            <NavLink
+              to="/movies"
+              className={splitPathname[1] === "movies" ? "activeLink" : ""}
+            >
               <span>{language === "EN" ? "Movies" : "Films"}</span>
             </NavLink>
-            <NavLink to="/series" className={splitPathname[1] === "series" ? "activeLink" : ""}>
+            <NavLink
+              to="/series"
+              className={splitPathname[1] === "series" ? "activeLink" : ""}
+            >
               <span>Series</span>
             </NavLink>
-            <NavLink to="/mylist" className={splitPathname[1] === "mylist" ? "activeLink" : ""}>
+            <NavLink
+              to="/mylist"
+              className={splitPathname[1] === "mylist" ? "activeLink" : ""}
+            >
               <span>{language === "EN" ? "My list" : "Mijn lijst"}</span>
             </NavLink>
           </div>
