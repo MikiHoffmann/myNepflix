@@ -2,7 +2,7 @@ import NavBar from "../components/NavBar/NavBar"
 import MainFooter from "../components/Footer/MainFooter"
 import MainHero from "../components/Hero/MainHero"
 import ImageLane from "../components/ImageLane/ImageLane"
-import MoviesVideo from "../assets/videos/homehero.mp4"
+import MoviesVideo from "../assets/videos/risenTrailer.mov"
 import MoviesHeroTitle from "../assets/images/title-img/homeheroTitle.png"
 import img from "../assets/images/25.jpg"
 const MoviesPage = () => {
