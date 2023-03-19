@@ -1,0 +1,30 @@
+.modalBackground {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--blackTrans);
+    transition: .4s;
+    z-index: 4000;
+    overflow-y: scroll;
+    .modalInfoContainer {
+        display: block;
+        position: relative;
+        top: 10%;
+        margin: 0 auto;
+        min-height: 80%;
+        height: 300%;
+        width: 80%;
+        background-color: var(--black);
+        border-radius: 15px;
+        .buttonModalClose {
+            position: absolute;
+            top: 2em;
+            right: 2em;
+        }
+    }
+}
+.modalBackground::-webkit-scrollbar {
+    display: none;
+}

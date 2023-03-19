@@ -1,0 +1,72 @@
+@import "../../assets/scss/mixins";
+.heroContainer {
+  position: relative;
+  height: auto;
+  width: 100%;
+  background-position: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .heroTitleContainer {
+    @include pagePaddingLeft;
+    position: absolute;
+    bottom: 40%;
+    height: 25%;
+    width: fit-content;
+  }
+  .heroButtonContainer {
+    @include pagePaddingLeft;
+    position: absolute;
+    top: 65%;
+    left: 0;
+    display: inline-flex;
+    gap: .8em;
+    justify-content: flex-start;
+    max-height: 3em;
+    height: 10%;
+    width: 100%;
+    z-index: 1000;
+    .heroInfoContainer {
+      position: absolute;
+      right: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: .8em;
+      align-self: flex-end;
+      height: 100%;
+      width: fit-content;
+      button {
+        height: 100%;
+        width: auto;
+        aspect-ratio: 1/1;
+      }
+      .heroAgeContainer {
+        height: 100%;
+        width: 9em;
+        padding-left: 1em;
+        background-color: var(--whiteTrans);
+        border-left: 3px solid var(--white);
+        svg {
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+  }
+  .heroToBackgroundTransition {
+    position: absolute;
+    bottom: -3%;
+    height: 10%;
+    width: 100%;
+    background: linear-gradient(
+      to top,
+      var(--black),
+      var(--black),
+      transparent
+    );
+  }
+  video {
+    height: auto;
+    width: 100%;
+  }
+}

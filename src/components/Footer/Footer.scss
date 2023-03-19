@@ -1,0 +1,71 @@
+@import "../../assets/scss/mixins";
+
+.footerWrapper {
+  @include pagePadding;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 4em;
+  padding-bottom: 3em;
+  font-family: "NetflixSansThin";
+  color: var(--whiteOpacity);
+  @include breakpoint(sm) {
+      width: 90%;
+      margin: 0 auto;
+  }
+  @include breakpoint(md) {
+      width: 85%;
+  }
+}
+.signInFooterWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: 100%;
+  background-color: var(--blackTrans);
+}
+.footerHeader {
+  margin: 0 0 1.5em 0;
+  font-size: 1.2em;
+  svg:not(svg:nth-of-type(1)) {
+    margin-left: 1.7em;
+  }
+}
+.footerLinkWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  .footerFakeLink {
+    flex: 50%;
+    margin: 0 0 0.8em 0;
+    font-size: 0.85em;
+    @include breakpoint(md) {
+        flex: 33%;
+    }
+    @include breakpoint(lg) {
+        flex: 25%;
+    }
+  }
+}
+.selectorContainer {
+    height: 2.5em;
+    width: 9em;
+    margin: 1.5em 0;
+    opacity: .5;
+    div::after {
+        top: 45%;
+    }
+    div select {
+        font-family: "NetflixSansThin";
+        font-size: 0.9em;
+    }
+}
+.footerBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 0.9em;
+    @media only screen and (min-width: 31.25em) {
+      flex-direction: row;
+    }
+}

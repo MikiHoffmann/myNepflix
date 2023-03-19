@@ -1,0 +1,81 @@
+@import "../../assets/scss/mixins";
+
+.heroImage {
+  background-attachment: scroll;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+.signInBannerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: 100%;
+  margin-bottom: 6em;
+  @include breakpoint(sm) {
+    margin-bottom: 8em;
+  }
+  .signInBannerTitle {
+    width: 90%;
+    padding: 1.5em 0 2.5em 0;
+    svg {
+      height: 2.5em;
+      width: auto;
+    }
+  }
+}
+.signInBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  padding: 3em 3em;
+  background-color: var(--blackTrans);
+  @include breakpoint(sm) {
+    width: 70%;
+  }
+  @include breakpoint(md) {
+    width: 60%;
+    padding: 3em 4em;
+  }
+  @include breakpoint(lg) {
+    width: 40%;
+  }
+}
+.signInForm {
+  width: 100%;
+}
+.formTitle {
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+.inputField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.2em 1em 0.5em 1em;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 4px;
+  span {
+    width: 100%;
+    font-family: "NetflixSansLight";
+    font-size: 0.7em;
+  }
+  input {
+    width: 100%;
+    font-family: "NetflixSansLight";
+    font-size: 1em;
+    border: none;
+    outline: none;
+  }
+}
+.signInBannerFooter {
+  padding-top: 2em;
+}

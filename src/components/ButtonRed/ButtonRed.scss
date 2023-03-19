@@ -1,0 +1,14 @@
+.buttonRed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    white-space: nowrap;
+    padding: .5em .8em;
+    background-color: var(--red);
+    font-size: 1em;
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

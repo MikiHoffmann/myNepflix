@@ -1,0 +1,142 @@
+@import "../../assets/scss/mixins";
+
+.heroWrapper {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 3em;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-blend-mode: none;
+  border-bottom: 0.8em solid rgb(35, 35, 35);
+}
+.heroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.heroImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-blend-mode: multiply;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.8)
+  );
+}
+.heroBanner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 5em auto;
+  padding: 3em 0;
+  text-align: center;
+  text-shadow: 0 0 6px var(--black);
+  color: var(--white);
+  z-index: 100;
+  @include breakpoint(md) {
+    width: 80%;
+  }
+  @include breakpoint(lg) {
+    width: 75%;
+  }
+}
+.heroTitle {
+  max-width: 100%;
+  font-family: "NetflixSansRegular";
+  font-size: 3em;
+  @include breakpoint(sm) {
+    width: 85%;
+  }
+  @include breakpoint(md) {
+    width: 70%;
+  }
+  @include breakpoint(lg) {
+    width: 60%;
+  }
+}
+.heroSubTitle {
+  margin: 1.5em 0;
+  font-family: "NetflixSansLight";
+  font-size: 1.8em;
+}
+.emailForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 3em 3em;
+  gap: 0.6em;
+  background-color: transparent;
+  font-family: "NetflixSansLight";
+  .emailFormTitle {
+    grid-area: 1/1/2/4;
+    margin-bottom: 1.7em;
+  }
+  .emailInput {
+    grid-area: 2/1/2/4;
+    padding: 0.8em;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+  }
+  a {
+    grid-area: 3/1/3/4;
+    width: 50%;
+    margin: 0 auto;
+    @media only screen and (min-width: 31.25em) {
+      width: 35%;
+    }
+  }
+  .startButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 0.6em;
+    background-color: var(--red);
+    font-size: 0.9em;
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    svg {
+      height: 80%;
+    }
+  }
+  @media only screen and (min-width: 54em) {
+    .emailInput {
+      grid-area: 2/1/2/3;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    a {
+      grid-area: 2/3/3/4;
+      width: 100%;
+      margin: 0;
+    }
+    .startButton {
+      height: 100%;
+      width: 100%;
+      font-size: 1.2em;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      svg {
+        height: 100%;
+      }
+    }
+  }
+}

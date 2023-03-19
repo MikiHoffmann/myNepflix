@@ -1,0 +1,38 @@
+.searchBar {
+  position: relative;
+  height: 80%;
+  width: 10em;
+  .searchBarInputClose {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    border: none;
+    transition: all .3s ease-in-out;
+    .searchIcon {
+        display: flex;
+        align-items: center;
+      height: 100%;
+      cursor: pointer;
+      svg {
+        height: 85%;
+        width: auto;
+      }
+    }
+  }
+  .searchBarInputActive {
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--whiteOpacity);
+    transition: all .3s ease-in-out;
+    .searchIcon {
+        display: flex;
+        align-items: center;
+      height: 100%;
+      cursor: pointer;
+      svg {
+        height: 85%;
+        width: auto;
+      }
+    }
+  }
+}
