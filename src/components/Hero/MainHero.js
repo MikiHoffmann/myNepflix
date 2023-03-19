@@ -10,9 +10,9 @@ import { IconKijkWijzer16 } from "../Icons/IconKijkWijzer16"
 import InfoModal from "../InfoModal/InfoModal"
 import { toggleModal } from "../../redux/modal/modal.actions"
 import { useDispatch, useSelector } from "react-redux"
-import img from "../../assets/images/22.jpg"
 
-const HomePageHero = ({ Video, HeroTitle }) => {
+
+const MainHero = ({ Video, HeroTitle, img }) => {
   const { language } = useContext(LangContext)
   const modalHidden = useSelector((state) => state.modal.modalContainer)
   const dispatch = useDispatch()
@@ -53,4 +53,4 @@ const HomePageHero = ({ Video, HeroTitle }) => {
   )
 }
 
-export default HomePageHero
+export default MainHero
