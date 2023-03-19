@@ -8,7 +8,6 @@ import HomePage from "./pages/HomePage"
 import MoviesPage from "./pages/MoviesPage"
 import SeriesPage from "./pages/SeriesPage"
 import MyListPage from "./pages/MyListPage"
-//import InfoModal from "./components/InfoModal/InfoModal"
 
 function App() {
   return (
