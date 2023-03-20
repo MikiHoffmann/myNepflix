@@ -4,6 +4,7 @@
     right: 0;
     bottom: 0;
     left: 0;
+    padding-bottom: 10em;
     background-color: var(--blackTrans);
     transition: .4s;
     z-index: 4000;
@@ -17,7 +18,7 @@
         height: 300%;
         width: 80%;
         background-color: var(--black);
-        border-radius: 20%;
+        border-radius: 20px;
         img {
             height: auto;
             width: 100%;
